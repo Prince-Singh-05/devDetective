@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Detective</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="top_level_container">
+            <h1>DevDetective</h1>
+            <div class="change_theme">
+                <h2 id="theme">LIGHT</h2>
+                <button id="themeBtn">
+                    <img id="themeImg" src="./assets/sun-icon.svg" alt="">
+                </button>
+            </div>
+        </div>
+
+        <div class="search_container">
+            <img src="./assets/search-icon.svg" alt="" id="searchImg">
+            <input type="text" placeholder="Enter a GitHub username...">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <div class="profile_container">
+
+            <!-- avatar and username -->
+            <div class="user_data">
+                <img src="" id="avatar">
+                <div class="user_content">
+                    <h2 id="name"></h2>
+                    <a href="" target="_blank" id="login-username"></a>
+                    <p id="created_at"></p>
+                </div>
+            </div>
+
+            <p class="user_bio"></p>
+
+            <!-- Repos | Followers | Following -->
+            <div class="numbers">
+                <div class="numbers_data">
+                    <p>Repos</p>
+                    <p class="counts" data-repo></p>
+                </div>
+                <div class="numbers_data">
+                    <p>Followers</p>
+                    <p class="counts" data-followers></p>
+                </div>
+                <div class="numbers_data">
+                    <p>Following</p>
+                    <p class="counts" data-following></p>
+                </div>
+            </div>
+
+            <!-- social links -->
+            <div class="social_links">
+                <div class="links">
+                    <div class="location links_group">
+                        <img src="./assets/location-icon.svg" alt="" id="locationImg">
+                        <p class="text" data-location></p>
+                    </div>
+
+                    <div class="blog links_group">
+                        <img src="./assets/website-icon.svg" alt="" id="websiteImg">
+                        <a href="" class="visit" target="_blank" data-blog></a>
+                    </div>
+                </div>
+
+                <div class="links">
+                    <div class="twitter links_group">
+                        <img src="./assets/twitter-icon.svg" alt="" id="twitterImg">
+                        <a href="" class="visit" target="_blank" data-twitter></a>
+                    </div>
+
+                    <div class="company links_group">
+                        <img src="./assets/company-icon.svg" alt="" id="companyImg">
+                        <p class="text" data-company></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
